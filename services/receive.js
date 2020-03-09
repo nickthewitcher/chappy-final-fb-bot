@@ -181,11 +181,11 @@ module.exports = class Receive {
         [
           {
             title: i18n.__("menu.yes"),
-            payload: "yes_data"
+            payload: "yes_confirmation"
           },
           {
             title: i18n.__("menu.no"),
-            payload: "no_data"
+            payload: "deny_confirmation"
           }
         ]
       );
@@ -426,6 +426,13 @@ module.exports = class Receive {
         user: this.user.psid
       };
       response = [firstResponse, payloadData];
+    } else if (payload.includes("deny_confirmation")) {
+      let first = Response.genText(i18n.__("get_started.input_name"));
+      let payloadSecond = {
+        payload: "deny_confirmation",
+        user: this.user.psid
+      };
+      response = [first, payloadSecond];
     } else {
       response = {
         text: `This is a default postback message for payload: ${payload}!`

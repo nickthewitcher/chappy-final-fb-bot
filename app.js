@@ -174,7 +174,10 @@ app.post("/webhook", (req, res) => {
           if (webhook_event.message) {
             if (webhook_event.message.quick_reply) {
               if (webhook_event.message.quick_reply.payload) {
-                if (webhook_event.message.quick_reply.payload === "no_data") {
+                if (
+                  webhook_event.message.quick_reply.payload ===
+                  "deny_confirmation"
+                ) {
                   users[senderPsid].state = "nombre";
                 }
               }
