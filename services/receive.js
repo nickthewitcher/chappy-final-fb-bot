@@ -155,20 +155,6 @@ module.exports = class Receive {
         }
       } else if (lastevent === "address") {
         response = [Response.genText(i18n.__("fallback.photoquestion"))];
-      } else if (lastevent === "preparationquestion") {
-        response = Response.genQuickReply(
-          i18n.__("fallback.preparationquestion"),
-          [
-            {
-              title: i18n.__("menu.yes"),
-              payload: "yes_data"
-            },
-            {
-              title: i18n.__("menu.no"),
-              payload: "no_data"
-            }
-          ]
-        );
       } else {
         response = [
           Response.genText(
@@ -190,7 +176,19 @@ module.exports = class Receive {
     let attachment = this.webhookEvent.message.attachments[0];
     console.log("Received attachment:", `${attachment} for ${this.user.psid}`);
     if (lastevent === "photoquestion") {
-      response = [Response.genText(i18n.__("fallback.preparationquestion"))];
+      response = Response.genQuickReply(
+        i18n.__("fallback.preparationquestion"),
+        [
+          {
+            title: i18n.__("menu.yes"),
+            payload: "yes_data"
+          },
+          {
+            title: i18n.__("menu.no"),
+            payload: "no_data"
+          }
+        ]
+      );
       console.log("Receive.js 135 help");
       console.log("---------Llamando a handleAttachmentMessage----------");
       console.log("Payload handleAttachmentMessage");
