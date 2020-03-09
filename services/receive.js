@@ -312,7 +312,7 @@ module.exports = class Receive {
             },
             {
               title: i18n.__("menu.no"),
-              payload: "no_1"
+              payload: "no"
             }
           ]
         )
@@ -328,7 +328,7 @@ module.exports = class Receive {
             },
             {
               title: i18n.__("menu.no"),
-              payload: "no_2"
+              payload: "no"
             }
           ]
         )
@@ -344,7 +344,7 @@ module.exports = class Receive {
             },
             {
               title: i18n.__("menu.no"),
-              payload: "no_3"
+              payload: "no"
             }
           ]
         )
@@ -360,23 +360,7 @@ module.exports = class Receive {
             },
             {
               title: i18n.__("menu.no"),
-              payload: "no_4"
-            }
-          ]
-        )
-      ];
-    } else if (payload.includes("complaints_4")) {
-      response = [
-        Response.genQuickReply(
-          i18n.__("complaints4flow.features_confirmation4"),
-          [
-            {
-              title: i18n.__("menu.yes"),
-              payload: "yes_4"
-            },
-            {
-              title: i18n.__("menu.no"),
-              payload: "no_4"
+              payload: "no"
             }
           ]
         )
@@ -417,6 +401,35 @@ module.exports = class Receive {
         user: this.user.psid
       };
       response = [confirm, payloadData];
+    } else if (payload.includes("no")) {
+      let firstResponse = Response.genQuickReply(
+        i18n.__("get_started.input_select"),
+        [
+          {
+            title: i18n.__("menu.complaints_1"),
+            payload: "complaints_1"
+          },
+          {
+            title: i18n.__("menu.complaints_2"),
+            payload: "complaints_2"
+          },
+          {
+            title: i18n.__("menu.complaints_3"),
+            payload: "complaints_3"
+          },
+          {
+            title: i18n.__("menu.complaints_4"),
+            payload: "complaints_4"
+          }
+        ]
+      );
+
+      let payloadData = {
+        payload: "no",
+        user: this.user.psid
+      };
+
+      response = [firstResponse, payloadData];
     } else {
       response = {
         text: `This is a default postback message for payload: ${payload}!`
