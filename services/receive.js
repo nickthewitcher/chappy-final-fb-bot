@@ -68,6 +68,10 @@ module.exports = class Receive {
           console.log("Asignando nulo");
           responses = null;
         }
+        if (response.payload === "no") {
+          console.log("Asignando nulo en No");
+          responses = null;
+        }
         delay++;
       }
     } else {
