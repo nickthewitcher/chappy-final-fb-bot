@@ -72,6 +72,10 @@ module.exports = class Receive {
           console.log("Asignando nulo en No");
           responses = null;
         }
+        /*if (response.payload === "no_data") {
+          console.log("Asignando nulo en No");
+          responses = null;
+        }*/
         delay++;
       }
     } else {
@@ -153,23 +157,15 @@ module.exports = class Receive {
         response = [Response.genText(i18n.__("fallback.photoquestion"))];
       } else if (lastevent === "preparationquestion") {
         response = Response.genQuickReply(
-          i18n.__("fallback.pickpersontarget"),
+          i18n.__("fallback.preparationquestion"),
           [
             {
-              title: i18n.__("menu.complaints_1"),
-              payload: "complaints_1"
+              title: i18n.__("menu.yes"),
+              payload: "yes_data"
             },
             {
-              title: i18n.__("menu.complaints_2"),
-              payload: "complaints_2"
-            },
-            {
-              title: i18n.__("menu.complaints_3"),
-              payload: "complaints_3"
-            },
-            {
-              title: i18n.__("menu.complaints_4"),
-              payload: "complaints_4"
+              title: i18n.__("menu.no"),
+              payload: "no_data"
             }
           ]
         );
@@ -427,19 +423,16 @@ module.exports = class Receive {
           }
         ]
       );
-
       let payloadData = {
         payload: "no",
         user: this.user.psid
       };
-
       response = [firstResponse, payloadData];
     } else {
       response = {
         text: `This is a default postback message for payload: ${payload}!`
       };
     }
-
     return response;
   }
 

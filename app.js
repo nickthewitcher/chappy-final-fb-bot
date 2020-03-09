@@ -170,6 +170,16 @@ app.post("/webhook", (req, res) => {
               }
             }
           }
+          //webhookEvent.message.quick_reply.payload
+          if (webhook_event.message) {
+            if (webhook_event.message.quick_reply) {
+              if (webhook_event.message.quick_reply.payload) {
+                if (webhook_event.message.quick_reply.payload === "no_data") {
+                  users[senderPsid].state = "nombre";
+                }
+              }
+            }
+          }
         } catch (error) {
           console.error(error);
           console.log(`An error has occured: '${error}'. We have been notified and \
@@ -224,6 +234,11 @@ app.post("/webhook", (req, res) => {
           varResponse != null
         ) {
           users[senderPsid].state = "preparationquestion";
+        } else if (
+          users[senderPsid].state === "preparationquestion" &&
+          varResponse != null
+        ) {
+          users[senderPsid].state = "when";
         }
         console.log("Estado cambiado");
         console.log("-------------------------------------");
