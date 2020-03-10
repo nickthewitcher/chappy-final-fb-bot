@@ -263,27 +263,10 @@ module.exports = class Receive {
       console.log("---------Llamando a handleAttachmentMessage----------");
       console.log("Payload handleAttachmentMessage");
       console.log(response);
-    }
-
-    if (lastevent === "finish") {
+    } else if (lastevent === "finish") {
       let first = Response.genText(i18n.__("fallback.finish1"));
       let second = Response.genText(i18n.__("fallback.finish2"));
       response = [first, second];
-      console.log("---------Llamando a handleAttachmentMessage----------");
-      console.log("Payload handleAttachmentMessage");
-      console.log(response);
-    } else {
-      response = Response.genQuickReply(i18n.__("fallback.attachment"), [
-        {
-          title: i18n.__("menu.help"),
-          payload: "CARE_HELP"
-        },
-        {
-          title: i18n.__("menu.start_over"),
-          payload: "GET_STARTED"
-        }
-      ]);
-      console.log("Receive.js 135 help");
       console.log("---------Llamando a handleAttachmentMessage----------");
       console.log("Payload handleAttachmentMessage");
       console.log(response);
