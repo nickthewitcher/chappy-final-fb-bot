@@ -258,11 +258,6 @@ app.post("/webhook", (req, res) => {
         } else if (users[senderPsid].state === "when" && varResponse != null) {
           users[senderPsid].state = "where";
         } else if (users[senderPsid].state === "where" && varResponse != null) {
-          users[senderPsid].state = users[senderPsid].typeOfReport;
-        } else if (
-          users[senderPsid].state === users[senderPsid].typeOfReport &&
-          varResponse != null
-        ) {
           if (users[senderPsid].typeOfReport === "yes_1") {
             users[senderPsid].state = "recomendation1";
           }

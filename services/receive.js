@@ -442,7 +442,7 @@ module.exports = class Receive {
       let name = Response.genText(i18n.__("get_started.input_name"));
 
       let payloadData = {
-        payload: "yes_1",
+        payload: "yes_2",
         user: this.user.psid
       };
       response = [confirm, payloadData, name];
@@ -451,7 +451,7 @@ module.exports = class Receive {
       let name = Response.genText(i18n.__("get_started.input_name"));
 
       let payloadData = {
-        payload: "yes_1",
+        payload: "yes_3",
         user: this.user.psid
       };
       response = [confirm, payloadData, name];
@@ -460,7 +460,7 @@ module.exports = class Receive {
       let name = Response.genText(i18n.__("get_started.input_name"));
 
       let payloadData = {
-        payload: "yes_1",
+        payload: "yes_4",
         user: this.user.psid
       };
       response = [confirm, payloadData, name];
