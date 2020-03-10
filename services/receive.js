@@ -158,18 +158,21 @@ module.exports = class Receive {
       } else if (lastevent === "when") {
         response = [Response.genText(i18n.__("fallback.scenefact"))];
       } else if (lastevent === "where") {
-        response = [Response.genText(i18n.__("fallback.specificfact"))];
+        let first = Response.genText(i18n.__("fallback.specificfact"));
+        let second;
+        if (this.user.typeOfReport === "yes_1") {
+          second = Response.genText(i18n.__("fallback.details1"));
+        } else if (this.user.typeOfReport === "yes_2") {
+          second = Response.genText(i18n.__("fallback.details2"));
+        } else if (this.user.typeOfReport === "yes_3") {
+          second = Response.genText(i18n.__("fallback.details3"));
+        } else if (this.user.typeOfReport === "yes_4") {
+          second = Response.genText(i18n.__("fallback.details4"));
+        }
+        response = [first, second];
       }
       //how
-      else if (lastevent === "yes_1") {
-        response = [Response.genText(i18n.__("fallback.details1"))];
-      } else if (lastevent === "yes_2") {
-        response = [Response.genText(i18n.__("fallback.details2"))];
-      } else if (lastevent === "yes_3") {
-        response = [Response.genText(i18n.__("fallback.details3"))];
-      } else if (lastevent === "yes_4") {
-        response = [Response.genText(i18n.__("fallback.details4"))];
-      } else if (lastevent === "recomendation1") {
+      else if (lastevent === "recomendation1") {
         let first = Response.genText(i18n.__("fallback.recomendation1"));
 
         let second = Response.genQuickReply(i18n.__("fallback.evidence"), [
