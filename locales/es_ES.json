@@ -12,13 +12,14 @@
     "complaints_1": "Robo o Hurto",
     "complaints_2": "Asalto",
     "complaints_3": "Agresión",
-    "complaints_4": "Maltrato animal",
+    "complaints_4": "Extorsión",
     "yes": "Sí",
     "no": "No"
   },
   "get_started": {
     "welcome": "¡Hola, {{userFirstName}}! Mi nombre es Chappy Police Man, ahora ya puedes enviarme tus denuncias policiales.",
-    "guidance": "Necesitaré algunos datos para iniciar con tu denuncia.",
+    "guidance": "No te preocupes estamos aquí para ayudarte en el menor tiempo posible.",
+    "input_select": "Por favor selecciona el tipo de denuncia que deseas reportar.",
     "help": "¿Cómo podemos ayudarte hoy?",
     "input_name": "Por favor ingresa tu nombre completo",
     "input_dni": "Por favor ingresa tu número de identificación o DNI",
@@ -29,16 +30,16 @@
     "input_security": "Verificación de identidad: Por favor ingrese la siguiente combinación, el apellido materno de su papá y el año de nacimiento de su mamá"
   },
   "complaints1flow": {
-    "features_confirmation1": "¿Usted fue la víctima del robo?"
+    "features_confirmation1": "La opción que elegiste fue Robo. ¿Es correcta?"
   },
   "complaints2flow": {
-    "features_confirmation2": "¿Usted fue víctima del asalto?"
+    "features_confirmation2": "La opción que elegiste fue Asalto. ¿Es correcta?"
   },
   "complaints3flow": {
-    "features_confirmation3": "¿Usted sufrió la agresión?"
+    "features_confirmation3": "La opción que elegiste fue Agresión. ¿Es correcta?"
   },
   "complaints4flow": {
-    "features_confirmation4": "¿Qué tipo de animal sufrió el maltrato?"
+    "features_confirmation4": "La opción que elegiste fue Extorsión. ¿Es correcta?"
   },
   "leadgen": {
     "promo": "Hola, {{userFirstName}}. Ahora encontrar ropa genial es más fácil y conveniente.",
@@ -99,10 +100,37 @@
     "cel": "Por favor ingresa tu número de celular",
     "email": "Por favor ingresa tu email",
     "address": "Por favor ingresa tu dirección",
-    "wrong": "La información ingresada es inválida",
+    "wrong": "La información ingresada es inválida. Por favor intente de nuevo.",
     "dni": "Un gusto en conocerte \"{{message}}\". Por favor ingrese el número de DNI",
     "photoquestion": "Por favor adjunte una fotografía de usted, en lo posible tomese la foto ahora o incluya una actual. Deberá distinguirse las orejas, el rostro y parte del cuello. ",
-    "preparationquestion": "Genial, gracias por su tiempo, a partir de ahora recopilaremos la información sobre su denuncia.",
-    "pickpersontarget": "Por favor, elije alguna de las siguientes opciones"
+    "preparationquestion": "¿Los datos ingresados son correctos?",
+    "when": "Vamos bien, ahora cuéntame.¿Cuando ocurrieron los hechos? DD/MM/AA HH:MM",
+    "pickpersontarget": "Por favor, elije alguna de las siguientes opciones",
+    "worry": "No te preocupes, estamos aquí para ayudarte en el menor tiempo posible.",
+    "picktypecomplaints": "Por favor selecciona el tipo de denuncia que deseas reportar.",
+    "correct_option": "Tranquilo, sentimos mucho lo que te ha ocurrido. Ahora necesitaré algunos datos para iniciar con tu denuncia.",
+    "requestdata": "Necesitaré algunos datos para iniciar con tu denuncia",
+    "reviewinputdata": "¿Por favor revisa  los datos ingresados son correctos?",
+    "datefact": "Vamos bien, ahora cuéntame, ¿Cuándo ocurrieron los hechos? DD/MM/AA HH:MM",
+    "scenefact": "¿En qué lugar ocurrió? Por favor trata de ser específico.",
+    "specificfact": "Cuéntame ¿Cómo sucedió? Trata de incluir la siguiente información:",
+    "recomendations1": "Entiendo, lamentamos lo sucedido. Recuerda que para salvaguardar  tu integridad, no debes poner resistencia ante un robo.",
+    "recomendations2": "Por favor si sufriste algún tipo de daño acércate al centro médico más cercano.",
+    "questionvidence": "¿Desea adjuntar alguna evidencia?",
+    "attachevidence": "Por favor adjunta la fotografía/documento de la evidencia.",
+    "registeredcomplaint": "Listo, no te preocupes, tu denuncia ha sido registrada con el código xxx y será derivada a las entidades pertinentes.",
+    "details1": "Detalle de las víctimas y delincuentes, información de los objetos robados.",
+    "details2": "Detalle de las víctimas y delincuentes, de las armas uilizadas y de los objetos robados.",
+    "details3": "Detalle de los agresores y de las armas utilizadas",
+    "details4": "Detalle de  la extorsion, extorsionadores, frecuencia de extorsión",
+    "recomendation1": "Entiendo lamentamos lo sucedido, recuerda que para salvaguardar  tu integridad, no debes poner resistencia ante un robo.",
+    "recomendation2": "Por favor si sufriste algún tipo de daño. acércate al centro médico más cercano.",
+    "recomendation3": "Por favor si sufriste algún tipo de daño. acércate al centro médico más cercano.",
+    "recomendation4": "Recomendamos  comunicarte cuanto antes con la policia para salvaguardar tu integridad.",
+    "evidence": "¿Desea adjuntar alguna evidencia?",
+    "evidence_input": "Por favor, adjunte la evidencia.",
+
+    "finish1": "Listo, no te preocupes, tu denuncia ha sido registrada  con el código xxx y será derivada a las entidades pertinentes. ",
+    "finish2": "Te atendió Chappy Police Man, espero haberte ayudado. Que tengas un buen día."
   }
 }

@@ -9,6 +9,8 @@
  */
 
 "use strict";
+const uuidv4 = require("uuid/v4");
+
 
 module.exports = class User {
   constructor(psid) {
@@ -32,6 +34,7 @@ module.exports = class User {
     this.howFact = "";
     this.detailFact = "";
     this.evidenceUrl = "";
+    this.idreport = uuidv4();
   }
   setProfile(profile) {
     this.firstName = profile.firstName;

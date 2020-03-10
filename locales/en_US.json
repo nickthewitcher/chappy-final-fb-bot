@@ -1,25 +1,26 @@
 {
   "profile": {
-    "greeting": "Welcome to Chappy Police Man {{user_first_name}}. Click get started to send us your reports or police complaints."
+    "greeting": "Welcome to Chappy Police Man, {{user_first_name}}! Click to start sending your police reports."
   },
   "menu": {
-    "support": "Customer Support",
+    "support": "Customer service",
     "order": "Order updates",
     "help": "Talk to an agent",
-    "suggestion": "Outfit suggestions",
-    "shop": "Shop now",
+    "suggestion": "Clothing suggestions",
+    "shop": "Buy",
     "start_over": "Start over",
-    "complaints_1": "Stole",
+    "complaints_1": "Theft or Theft",
     "complaints_2": "Assault",
     "complaints_3": "Aggression",
-    "complaints_4": "Animal abuse",
+    "complaints_4": "Extortion",
     "yes": "Sí",
     "no": "No"
   },
   "get_started": {
-    "welcome": "Welcome to Chappy Police Man {{user_first_name}}.",
-    "guidance": "I need some information to start with your complaint.",
-    "help": "What kind of reports do you want to send me to today?",
+    "welcome": "Hello, {{userFirstName}}! My name is Chappy Police Man, now you can send me your police reports.",
+    "guidance": "Don't worry we are here to help you in the shortest possible time.",
+    "input_select": "Please select the type of complaint you wish to report.",
+    "help": "How can we help you today?",
     "input_name": "Please enter your full name",
     "input_dni": "Please enter your identification number or ID",
     "input_cel": "Please enter your mobile number",
@@ -29,80 +30,107 @@
     "input_security": "Identity verification: Please enter the following combination, your father's mother's last name and your mother's year of birth"
   },
   "complaints1flow": {
-    "features_confirmation1": "Were you the victim of the theft?"
+    "features_confirmation1": "The option you chose was Robo. Is it correct?"
   },
   "complaints2flow": {
-    "features_confirmation2": "Were you  the victim of the assault?"
+    "features_confirmation2": "The option you chose was Assault. Is it correct?"
   },
   "complaints3flow": {
-    "features_confirmation3": "Did you suffer the aggression?"
+    "features_confirmation3": "The option you chose was Aggression. Is it correct?"
   },
   "complaints4flow": {
-    "features_confirmation4": "What kind of animal suffered abuse?"
+    "features_confirmation4": "The option you chose was Extortion. Is it correct?"
   },
   "leadgen": {
-    "promo": "Hi {{userFirstName}}, finding great outfits is now easier and more convenient.",
-    "title": "50% Coupon",
+    "promo": "Hello, {{userFirstName}}. Now finding great clothes is easier and convenient.",
+    "title": "50% discount coupon",
     "subtitle": "Here is your coupon",
     "apply": "Apply discount",
-    "coupon": "Added your coupon to this thread, you can now check out the discounted summer collection"
+    "coupon": "Your coupon was added to this conversation; now you can check out the discounted summer collection"
   },
   "curation": {
-    "prompt": "Are you looking for an outfit for yourself or someone else?",
-    "occasion": "Great! Let's get started. First, is there an occasion in mind?",
-    "price": "How much are you looking to spend?",
+    "prompt": "Are you looking for clothes for yourself or someone else?",
+    "occasion": "Great! Let's start. First, are you looking for clothes for a special occasion?",
+    "price": "How much do you want to spend?",
     "me": "For me!",
-    "someone": "Someone else",
+    "someone": "For another person",
     "work": "Work",
     "dinner": "Dinner",
-    "party": "Party",
-    "sales": "Talk to sales",
-    "shop": "Shop this look",
-    "title": "Summer collection 2019",
-    "subtitle": "Featured outfit",
+    "party": "Fiesta",
+    "sales": "Talk to the sales team",
+    "shop": "Buy this look",
+    "title": "Summer 2019 Collection",
+    "subtitle": "Featured clothing",
     "show": "Another look"
   },
   "order": {
-    "prompt": "We'll be happy to help you. Select from the following",
+    "prompt": "We will be happy to help you. Select one of the following options",
     "search": "Search by order number",
-    "account": "Link my Account",
+    "account": "Link my account",
     "dialog": "Account linking dialog",
-    "searching": "Searching for your last order...",
-    "number": "Sure, please write the order number",
-    "status": "Your order is on it’s way, expect to have it in 3 days."
+    "searching": "Looking for your last order ...",
+    "number": "Of course, write the order number",
+    "status": "Your order is on its way, expect to receive it in three days."
   },
   "care": {
-    "prompt": "To connect you with the right team please let me know what this is about?",
-    "order": "Order Inquiries",
-    "billing": "Billing Issues",
-    "other": "Other",
-    "issue": "Hi {{userFirstName}}, my name is {{agentFirstName}}, I'm here to assist you with any questions you might have about your {{topic}}.",
-    "default": "Hi {{userFirstName}}, my name is {{agentFirstName}}, I'm here to assist you today. How can I help you?",
-    "style": "Hi {{userFirstName}}, my name is {{agentFirstName}}, I’m here to answer questions you might have on our summer styles",
-    "end": "This is as far as the demo goes. Leverage the power of the messenger platform for your business. See https://fb.me/get-sample-oc to learn how to build a similar experience",
+    "prompt": "To connect with the correct equipment, tell me what it is.",
+    "order": "Order inquiries",
+    "billing": "Billing problems",
+    "other": "Another theme",
+    "issue": "Hi, {{userFirstName}}. My name is {{agentFirstName}} and I'm here to help you with any questions you have about {{topic}}.",
+    "default": "Hi, {{userFirstName}}. My name is {{agentFirstName}} and I'm here to help you. How can I help you?",
+    "style": "Hi, {{userFirstName}}. My name is {{agentFirstName}} and I'm here to answer any questions you may have about our summer styles.",
+    "end": "Here ends the demo. Take advantage of the effectiveness of the Messenger platform for your business. Visit https://fb.me/get-sample-oc to learn how to create a similar experience",
     "help": "Help"
   },
   "survey": {
-    "prompt": "Hi, want to get quick feedback on your recent experience with {{agentFirstName}}",
-    "positive": "Thanks for the feedback",
-    "neutral": "Thanks for the feedback, if there something we should improve feel free to comment with #suggestion",
-    "negative": "Thanks for telling us. Sorry to hear that, if there something we can do to turn this let us know",
-    "suggestion": "Your suggestion has been recorded for future review by the team. If this is something we need to get back to you right now just comment \"help\""
+    "prompt": "Hello, I want to know your opinion about your recent experience with {{agentFirstName}}",
+    "positive": "Thank you for your opinion",
+    "neutral": "Thank you for your opinion; if you think there is something we should improve, send us a comment with the hashtag #sugrencia",
+    "negative": "Thank you for letting us know. We are sorry for what happened, tell us if there is anything we can do to improve the situation",
+    "suggestion": "We received your suggestion and the team will review it soon. If you need to receive an answer about this now, send a comment with the word \"help\""
   },
   "chat_plugin": {
-    "prompt": "Thanks for visiting our store, be sure to check out all the great styles we have on the summer section."
+    "prompt": "Thank you for visiting our store, be sure to see all the excellent styles we have in the summer section."
   },
   "fallback": {
-    "any": "Sorry, but I don’t recognize \"{{message}}\".",
-    "attachment": "Thanks for sending this attachment, we can connect you to an agent to review it or we can start over",
-    "birthday": "Please enter your birthday",
-    "cel": "Please enter your phone number",
+    "any": "Sorry, but I don't recognize \"{{message}}\".",
+    "attachment": "Thank you for sending this attachment; now we can contact an agent to review it or you can start over",
+    "birthday": "Please enter your birth date",
+    "cel": "Please enter your mobile number",
     "email": "Please enter your email",
     "address": "Please enter your address",
-    "wrong": "The information entered is not valid",
-    "dni": "Nice to meet you \"{{message}}\". Please enter your number of identification or Passport Card Number",
-    "photoquestion": "Please attach a picture of you, if possible take the photo now or include a current one. The ears, face and part of the neck should be distinguished.",
-    "preparationquestion": "Great, thanks for your time, from now we will collect the info about your report or police complaints. Please insert the date and hour of the crime",
-    "pickpersontarget": "Please choose one of the following options"
+    "wrong": "The information entered is invalid. Please try again.",
+    "dni": "Nice to meet you \"{{message}}\". Please enter the ID number",
+    "photoquestion": "Please attach a photograph of you, if possible take the photo now or include a current one. You must distinguish your ears, face and neck.",
+    "preparationquestion": "Are the data entered correct?",
+    "when": "Let's go well, now tell me. When did the events happen? DD / MM / AA HH: MM",
+    "pickpersontarget": "Please choose one of the following options",
+    "worry": "Don't worry, we are here to help you in the shortest possible time.",
+    "picktypecomplaints": "Please select the type of complaint you wish to report.",
+    "correct_option": "Quiet, we are very sorry for what happened to you. Now I will need some information to start your complaint.",
+    "requestdata": "I will need some information to start your complaint",
+    "reviewinputdata": "Please check the data entered are correct?",
+    "datefact": "Let's go well, now tell me, when did the events occur? DD / MM / AA HH: MM",
+    "scenefact": "Where did it happen? Please try to be specific.",
+    "specificfact": "Tell me how it happened? Try to include the following information:",
+    "recommentions1": "I understand, we regret what happened. Remember that to safeguard your integrity, you should not put resistance against a robbery.",
+    "recommentions2": "Please, if you suffered any kind of damage, go to the nearest medical center.",
+    "questionvidence": "Do you want to attach any evidence?",
+    "attachevidence": "Please attach the photo / document of the evidence.",
+    "registeredcomplaint": "Ready, do not worry, your complaint has been registered with the code xxx and will be referred to the relevant entities.",
+    "details1": "Details of victims and criminals, information on stolen objects.",
+    "details2": "Details of victims and criminals, of weapons used and of stolen objects.",
+    "details3": "Details of the aggressors and the weapons used",
+    "details4": "Extortion detail, extortionists, extortion frequency",
+    "recommention1": "I understand we regret what happened, remember that in order to safeguard your integrity, you should not put resistance against theft.",
+    "recommention2": "Please if you suffered any kind of damage. approach the nearest medical center.",
+    "recommention3": "Please if you suffered any damage. approach the nearest medical center.",
+    "recommention4": "We recommend contacting the police as soon as possible to safeguard your integrity.",
+    "evidence": "Do you want to attach any evidence?",
+    "evidence_input": "Please attach the evidence.",
+
+    "finish1": "Ready, do not worry, your complaint has been registered with the code xxx and will be referred to the relevant entities.",
+    "finish2": "Chappy Police Man attended you, I hope I helped you. Have a nice day."
   }
 }
