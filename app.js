@@ -245,11 +245,10 @@ app.post("/webhook", (req, res) => {
         } else if (users[senderPsid].state === "when" && varResponse != null) {
           users[senderPsid].state = "where";
         } else if (users[senderPsid].state === "where" && varResponse != null) {
-          users[senderPsid].state = "how";
+          users[senderPsid].state = users[senderPsid].typeOfReport;
         } else if (users[senderPsid].state === "how" && varResponse != null) {
           users[senderPsid].state = "evidence";
         }
-
         console.log("Estado cambiado");
         console.log("-------------------------------------");
         console.log(users[senderPsid].state);

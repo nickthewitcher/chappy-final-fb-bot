@@ -155,6 +155,20 @@ module.exports = class Receive {
         }
       } else if (lastevent === "address") {
         response = [Response.genText(i18n.__("fallback.photoquestion"))];
+      } else if (lastevent === "when") {
+        response = [Response.genText(i18n.__("fallback.scenefact"))];
+      } else if (lastevent === "where") {
+        response = [Response.genText(i18n.__("fallback.specificfact"))];
+      }
+      //how
+      else if (lastevent === "yes_1") {
+        response = [Response.genText(i18n.__("fallback.details1"))];
+      } else if (lastevent === "yes_2") {
+        response = [Response.genText(i18n.__("fallback.details2"))];
+      } else if (lastevent === "yes_3") {
+        response = [Response.genText(i18n.__("fallback.details3"))];
+      } else if (lastevent === "yes_4") {
+        response = [Response.genText(i18n.__("fallback.details4"))];
       } else {
         response = [
           Response.genText(

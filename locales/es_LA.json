@@ -113,12 +113,15 @@
     "reviewinputdata": "¿Por favor revisa  los datos ingresados son correctos?",
     "datefact": "Vamos bien, ahora cuéntame, ¿Cuándo ocurrieron los hechos? DD/MM/AA HH:MM",
     "scenefact": "¿En qué lugar ocurrió? Por favor trata de ser específico.",
-    "especificfact": "Cuéntame ¿Cómo sucedió? Trata de incluir la siguiente información:",
+    "specificfact": "Cuéntame ¿Cómo sucedió? Trata de incluir la siguiente información:",
     "recomendations1": "Entiendo, lamentamos lo sucedido. Recuerda que para salvaguardar  tu integridad, no debes poner resistencia ante un robo.",
     "recomendations2": "Por favor si sufriste algún tipo de daño acércate al centro médico más cercano.",
     "questionvidence": "¿Desea adjuntar alguna evidencia?",
     "attachevidence": "Por favor adjunta la fotografía/documento de la evidencia.",
-    "registeredcomplaint": "Listo, no te preocupes, tu denuncia ha sido registrada con el código xxx y será derivada a las entidades pertinentes."
-
+    "registeredcomplaint": "Listo, no te preocupes, tu denuncia ha sido registrada con el código xxx y será derivada a las entidades pertinentes.",
+    "details1": "Detalle de las víctimas y delincuentes, información de los objetos robados.",
+    "details2": "Detalle de las víctimas y delincuentes, de las armas uilizadas y de los objetos robados.",
+    "details3": "Detalle de los agresores y de las armas utilizadas",
+    "details4": "Detalle de  la extorsion, extorsionadores, frecuencia de extorsión"
   }
 }
