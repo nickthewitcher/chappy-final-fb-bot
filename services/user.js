@@ -9,8 +9,8 @@
  */
 
 "use strict";
-const uuidv4 = require("uuid/v4");
-
+const { v4: uuidv4 } = require("uuid");
+let random = uuidv4();
 
 module.exports = class User {
   constructor(psid) {
@@ -34,7 +34,8 @@ module.exports = class User {
     this.howFact = "";
     this.detailFact = "";
     this.evidenceUrl = "";
-    this.idreport = uuidv4();
+    this.idreport = random.substring(30, 40);
+    this.idDocument = random;
   }
   setProfile(profile) {
     this.firstName = profile.firstName;

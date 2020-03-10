@@ -1,0 +1,17 @@
+{
+"title_en" : "POLICE COMPLAINT RECEPTION FORM",
+"titl_per_en": "GENERAL INFORMATION OF THE COMPLAINANT",
+"fullname_en": "Names and surnames:",
+"iddoc_en": "Identity document or passport:",
+"birthday_en": "Date of birth:",
+"telephone_en": "Mobile number:",
+"email_en": "Email:",
+"address_en": "Address:",
+"title_com_en": "COMPLAINT DATA",
+"type_en": "Type of complaint:",
+"datetime_en": "Date and Time:",
+"place_en": "Place:",
+"details_en": "Report of the facts:",
+"evidence_en": "Evidence:",
+"idreport_en": "Reporting ID:"
+}
