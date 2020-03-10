@@ -435,32 +435,32 @@ module.exports = class Receive {
       };
       response = [confirm, payloadData, name];
     } else if (payload.includes("yes_2")) {
-      let confirm = Response.genText(
-        i18n.__("complaints2flow.features_confirmation2")
-      );
+      let confirm = Response.genText(i18n.__("fallback.correct_option"));
+      let name = Response.genText(i18n.__("get_started.input_name"));
+
       let payloadData = {
-        payload: "yes_2",
+        payload: "yes_1",
         user: this.user.psid
       };
-      response = [confirm, payloadData];
+      response = [confirm, payloadData, name];
     } else if (payload.includes("yes_3")) {
-      let confirm = Response.genText(
-        i18n.__("complaints3flow.features_confirmation3")
-      );
+      let confirm = Response.genText(i18n.__("fallback.correct_option"));
+      let name = Response.genText(i18n.__("get_started.input_name"));
+
       let payloadData = {
-        payload: "yes_3",
+        payload: "yes_1",
         user: this.user.psid
       };
-      response = [confirm, payloadData];
+      response = [confirm, payloadData, name];
     } else if (payload.includes("yes_4")) {
-      let confirm = Response.genText(
-        i18n.__("complaints4flow.features_confirmation4")
-      );
+      let confirm = Response.genText(i18n.__("fallback.correct_option"));
+      let name = Response.genText(i18n.__("get_started.input_name"));
+
       let payloadData = {
-        payload: "yes_4",
+        payload: "yes_1",
         user: this.user.psid
       };
-      response = [confirm, payloadData];
+      response = [confirm, payloadData, name];
     } else if (payload.includes("no")) {
       let firstResponse = Response.genQuickReply(
         i18n.__("get_started.input_select"),
