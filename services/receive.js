@@ -433,7 +433,17 @@ module.exports = class Receive {
         user: this.user.psid
       };
       response = [first, payloadSecond];
-    } else {
+    } else if (payload.includes("yes_confirmation")) {
+      let first = Response.genText(i18n.__("fallback.when"));
+      let payloadSecond = {
+        payload: "yes_confirmation",
+        user: this.user.psid
+      };
+      response = [first, payloadSecond];
+    }
+
+    //yes_confirmation
+    else {
       response = {
         text: `This is a default postback message for payload: ${payload}!`
       };
