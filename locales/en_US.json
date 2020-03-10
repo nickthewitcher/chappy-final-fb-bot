@@ -9,7 +9,7 @@
     "suggestion": "Clothing suggestions",
     "shop": "Buy",
     "start_over": "Start over",
-    "complaints_1": "Theft or Theft",
+    "complaints_1": "Theft",
     "complaints_2": "Assault",
     "complaints_3": "Aggression",
     "complaints_4": "Extortion",
@@ -30,7 +30,7 @@
     "input_security": "Identity verification: Please enter the following combination, your father's mother's last name and your mother's year of birth"
   },
   "complaints1flow": {
-    "features_confirmation1": "The option you chose was Robo. Is it correct?"
+    "features_confirmation1": "The option you chose was Theft. Is it correct?"
   },
   "complaints2flow": {
     "features_confirmation2": "The option you chose was Assault. Is it correct?"
