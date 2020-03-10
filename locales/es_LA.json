@@ -122,6 +122,11 @@
     "details1": "Detalle de las víctimas y delincuentes, información de los objetos robados.",
     "details2": "Detalle de las víctimas y delincuentes, de las armas uilizadas y de los objetos robados.",
     "details3": "Detalle de los agresores y de las armas utilizadas",
-    "details4": "Detalle de  la extorsion, extorsionadores, frecuencia de extorsión"
+    "details4": "Detalle de  la extorsion, extorsionadores, frecuencia de extorsión",
+    "recomendation1": "Entiendo lamentamos lo sucedido, recuerda que para salvaguardar  tu integridad, no debes poner resistencia ante un robo.",
+    "recomendation2": "Por favor si sufriste algún tipo de daño. acércate al centro médico más cercano.",
+    "recomendation3": "Por favor si sufriste algún tipo de daño. acércate al centro médico más cercano.",
+    "recomendation4": "Recomendamos  comunicarte cuanto antes con la policia para salvaguardar tu integridad.",
+    "evidence": "¿Desea adjuntar alguna evidencia?"
   }
 }

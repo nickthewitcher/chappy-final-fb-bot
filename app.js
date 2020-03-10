@@ -246,9 +246,32 @@ app.post("/webhook", (req, res) => {
           users[senderPsid].state = "where";
         } else if (users[senderPsid].state === "where" && varResponse != null) {
           users[senderPsid].state = users[senderPsid].typeOfReport;
-        } else if (users[senderPsid].state === "how" && varResponse != null) {
+        } else if (
+          users[senderPsid].state === users[senderPsid].typeOfReport &&
+          varResponse != null
+        ) {
+          if (users[senderPsid].typeOfReport === "yes_1") {
+            users[senderPsid].state = "recomendation1";
+          }
+          if (users[senderPsid].typeOfReport === "yes_2") {
+            users[senderPsid].state = "recomendation2";
+          }
+          if (users[senderPsid].typeOfReport === "yes_3") {
+            users[senderPsid].state = "recomendation3";
+          }
+          if (users[senderPsid].typeOfReport === "yes_4") {
+            users[senderPsid].state = "recomendation4";
+          }
+        } else if (
+          users[senderPsid].state === "recomendation1" ||
+          users[senderPsid].state === "recomendation2" ||
+          users[senderPsid].state === "recomendation3" ||
+          users[senderPsid].state === "recomendation4"
+        ) {
           users[senderPsid].state = "evidence";
         }
+
+
         console.log("Estado cambiado");
         console.log("-------------------------------------");
         console.log(users[senderPsid].state);

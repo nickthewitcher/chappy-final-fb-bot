@@ -169,6 +169,27 @@ module.exports = class Receive {
         response = [Response.genText(i18n.__("fallback.details3"))];
       } else if (lastevent === "yes_4") {
         response = [Response.genText(i18n.__("fallback.details4"))];
+      } else if (lastevent === "recomendation1") {
+        response = [Response.genText(i18n.__("fallback.recomendation1"))];
+      } else if (lastevent === "recomendation2") {
+        response = [Response.genText(i18n.__("fallback.recomendation2"))];
+      } else if (lastevent === "recomendation3") {
+        response = [Response.genText(i18n.__("fallback.recomendation3"))];
+      } else if (lastevent === "recomendation4") {
+        response = [Response.genText(i18n.__("fallback.recomendation4"))];
+      } else if (lastevent === "evidence") {
+        response = [
+          Response.genQuickReply(i18n.__("fallback.evidence"), [
+            {
+              title: i18n.__("menu.yes"),
+              payload: "accept_evidence"
+            },
+            {
+              title: i18n.__("menu.no"),
+              payload: "noaccept_evidence"
+            }
+          ])
+        ];
       } else {
         response = [
           Response.genText(
