@@ -269,9 +269,12 @@ app.post("/webhook", (req, res) => {
           users[senderPsid].state === "recomendation4"
         ) {
           users[senderPsid].state = "evidence";
+        } else if (
+          users[senderPsid].state === "evidence" &&
+          varResponse != null
+        ) {
+          users[senderPsid].state = "finish";
         }
-
-
         console.log("Estado cambiado");
         console.log("-------------------------------------");
         console.log(users[senderPsid].state);

@@ -170,26 +170,61 @@ module.exports = class Receive {
       } else if (lastevent === "yes_4") {
         response = [Response.genText(i18n.__("fallback.details4"))];
       } else if (lastevent === "recomendation1") {
-        response = [Response.genText(i18n.__("fallback.recomendation1"))];
+        let first = Response.genText(i18n.__("fallback.recomendation1"));
+
+        let second = Response.genQuickReply(i18n.__("fallback.evidence"), [
+          {
+            title: i18n.__("menu.yes"),
+            payload: "accept_evidence"
+          },
+          {
+            title: i18n.__("menu.no"),
+            payload: "noaccept_evidence"
+          }
+        ]);
+        response = [first, second];
       } else if (lastevent === "recomendation2") {
-        response = [Response.genText(i18n.__("fallback.recomendation2"))];
+        let first = Response.genText(i18n.__("fallback.recomendation2"));
+
+        let second = Response.genQuickReply(i18n.__("fallback.evidence"), [
+          {
+            title: i18n.__("menu.yes"),
+            payload: "accept_evidence"
+          },
+          {
+            title: i18n.__("menu.no"),
+            payload: "noaccept_evidence"
+          }
+        ]);
+        response = [first, second];
       } else if (lastevent === "recomendation3") {
-        response = [Response.genText(i18n.__("fallback.recomendation3"))];
+        let first = Response.genText(i18n.__("fallback.recomendation3"));
+
+        let second = Response.genQuickReply(i18n.__("fallback.evidence"), [
+          {
+            title: i18n.__("menu.yes"),
+            payload: "accept_evidence"
+          },
+          {
+            title: i18n.__("menu.no"),
+            payload: "noaccept_evidence"
+          }
+        ]);
+        response = [first, second];
       } else if (lastevent === "recomendation4") {
-        response = [Response.genText(i18n.__("fallback.recomendation4"))];
-      } else if (lastevent === "evidence") {
-        response = [
-          Response.genQuickReply(i18n.__("fallback.evidence"), [
-            {
-              title: i18n.__("menu.yes"),
-              payload: "accept_evidence"
-            },
-            {
-              title: i18n.__("menu.no"),
-              payload: "noaccept_evidence"
-            }
-          ])
-        ];
+        let first = Response.genText(i18n.__("fallback.recomendation4"));
+
+        let second = Response.genQuickReply(i18n.__("fallback.evidence"), [
+          {
+            title: i18n.__("menu.yes"),
+            payload: "accept_evidence"
+          },
+          {
+            title: i18n.__("menu.no"),
+            payload: "noaccept_evidence"
+          }
+        ]);
+        response = [first, second];
       } else {
         response = [
           Response.genText(
@@ -225,6 +260,15 @@ module.exports = class Receive {
         ]
       );
       console.log("Receive.js 135 help");
+      console.log("---------Llamando a handleAttachmentMessage----------");
+      console.log("Payload handleAttachmentMessage");
+      console.log(response);
+    }
+
+    if (lastevent === "finish") {
+      let first = Response.genText(i18n.__("fallback.finish1"));
+      let second = Response.genText(i18n.__("fallback.finish2"));
+      response = [first, second];
       console.log("---------Llamando a handleAttachmentMessage----------");
       console.log("Payload handleAttachmentMessage");
       console.log(response);
@@ -475,6 +519,13 @@ module.exports = class Receive {
         user: this.user.psid
       };
       response = [first, payloadSecond];
+    } else if (payload.includes("noaccept_evidence")) {
+      let first = Response.genText(i18n.__("fallback.finish1"));
+      let second = Response.genText(i18n.__("fallback.finish2"));
+      response = [first, second];
+    } else if (payload.includes("accept_evidence")) {
+      let first = Response.genText(i18n.__("fallback.evidence_input"));
+      response = [first];
     }
 
     //yes_confirmation

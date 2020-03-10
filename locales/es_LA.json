@@ -127,6 +127,10 @@
     "recomendation2": "Por favor si sufriste algún tipo de daño. acércate al centro médico más cercano.",
     "recomendation3": "Por favor si sufriste algún tipo de daño. acércate al centro médico más cercano.",
     "recomendation4": "Recomendamos  comunicarte cuanto antes con la policia para salvaguardar tu integridad.",
-    "evidence": "¿Desea adjuntar alguna evidencia?"
+    "evidence": "¿Desea adjuntar alguna evidencia?",
+    "evidence_input": "Por favor, adjunte la evidencia.",
+
+    "finish1": "Listo, no te preocupes, tu denuncia ha sido registrada  con el código xxx y será derivada a las entidades pertinentes. ",
+    "finish2": "Te atendió Chappy Police Man, espero haberte ayudado. Que tengas un buen día."
   }
 }
