@@ -167,6 +167,19 @@ app.post("/webhook", (req, res) => {
               if (webhook_event.postback.title === "Get Started") {
                 console.log("Inicializamos en postback get started");
                 users[senderPsid].state = "getstarted";
+                users[senderPsid].typeOfReport = "";
+                users[senderPsid].legalName = "";
+                users[senderPsid].legalDni = "";
+                users[senderPsid].legalBirthday = "";
+                users[senderPsid].cellphone = "";
+                users[senderPsid].legalEmail = "";
+                users[senderPsid].legaladdress = "";
+                users[senderPsid].photoUrl = "";
+                users[senderPsid].dateOfFact = "";
+                users[senderPsid].addressFact = "";
+                users[senderPsid].howFact = "";
+                users[senderPsid].detailFact = "";
+                users[senderPsid].evidenceUrl = "";
               }
             }
           }
