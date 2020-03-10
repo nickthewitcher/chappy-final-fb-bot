@@ -179,7 +179,7 @@ module.exports = class Receive {
           },
           {
             title: i18n.__("menu.no"),
-            payload: "noaccept_evidence"
+            payload: "decline_evidence"
           }
         ]);
         response = [first, second];
@@ -193,7 +193,7 @@ module.exports = class Receive {
           },
           {
             title: i18n.__("menu.no"),
-            payload: "noaccept_evidence"
+            payload: "decline_evidence"
           }
         ]);
         response = [first, second];
@@ -207,7 +207,7 @@ module.exports = class Receive {
           },
           {
             title: i18n.__("menu.no"),
-            payload: "noaccept_evidence"
+            payload: "decline_evidence"
           }
         ]);
         response = [first, second];
@@ -221,7 +221,7 @@ module.exports = class Receive {
           },
           {
             title: i18n.__("menu.no"),
-            payload: "noaccept_evidence"
+            payload: "decline_evidence"
           }
         ]);
         response = [first, second];
@@ -502,7 +502,7 @@ module.exports = class Receive {
         user: this.user.psid
       };
       response = [first, payloadSecond];
-    } else if (payload.includes("noaccept_evidence")) {
+    } else if (payload.includes("decline_evidence")) {
       let first = Response.genText(i18n.__("fallback.finish1"));
       let second = Response.genText(i18n.__("fallback.finish2"));
       response = [first, second];
