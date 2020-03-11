@@ -148,6 +148,8 @@
     "place_en": "Lugar: ",
     "details_en": "Detalle de los hechos: ",
     "evidence_en": "Evidencia: ",
-    "idreport_en": "ID de denuncia: "
+    "idreport_en": "ID de denuncia: ",
+    "sign_complainant": "Firma del denunciante",
+    "sign_authority": "Firma del comandante"
   }
 }

@@ -132,25 +132,23 @@
 	},
 	"titles": {
 		"title_en": "POLICE COMPLAINT RECEPTION FORM",
-		"titl_per_en": "GENERAL INFORMATION OF THE COMPLAINANT",
+		"titl_per_en": "CONTACT INFORMATION",
 		"title_com_en": "COMPLAINT DATA"
 	},
 	"report": {
-		"fullname_en": "Names and surnames:",
-		"iddoc_en": "Identity document or passport:",
-		"birthday_en": "Date of birth:",
-		"telephone_en": "Mobile number:",
-		"email_en": "Email:",
-		"address_en": "Address:",
-		"type_en": "Type of complaint:",
-		"datetime_en": "Date and Time:",
-		"place_en": "Place:",
-		"details_en": "Report of the facts:",
-		"evidence_en": "Evidence:",
-		"idreport_en": "Reporting ID:",
-		"title_com_en": "report.title_com_en"
-	},
-	"title": {
-		"title_com_en": "title.title_com_en"
+		"fullname_en": "Names and surnames: ",
+		"iddoc_en": "Identity document or passport: ",
+		"birthday_en": "Date of birth: ",
+		"telephone_en": "Mobile number: ",
+		"email_en": "Email: ",
+		"address_en": "Address: ",
+		"type_en": "Type of complaint: ",
+		"datetime_en": "Date and Time: ",
+		"place_en": "Place: ",
+		"details_en": "Report of the facts: ",
+		"evidence_en": "Evidence: ",
+		"idreport_en": "Reporting ID: ",
+		"sign_complainant": "Complainant's signature",
+		"sign_authority": "Sheriff's signature"
 	}
 }
