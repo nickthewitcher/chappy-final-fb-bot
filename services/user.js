@@ -22,6 +22,7 @@ module.exports = class User {
     this.gender = "neutral";
     this.state = "select_input";
     this.typeOfReport = "";
+    this.complaintType = "";
     this.legalName = "";
     this.legalDni = "";
     this.legalBirthday = "";

@@ -137,6 +137,20 @@ module.exports = class Receive {
             }
           ])
         ];
+      } else if (lastevent === "confirm_input") {
+        response = [
+          Response.genQuickReply(i18n.__("fallback.wrong"), [
+            {
+              title: i18n.__("menu. "),
+              paylo ad: "complaints_1"
+            },
+            {
+              title: i18n.__("menu.complaints_2"),
+              payload: "complaints_2"
+            },
+
+          ])
+        ];
       } else if (lastevent === "nombre") {
         let responseData = Response.genText(
           i18n.__("fallback.dni", {
@@ -401,7 +415,7 @@ module.exports = class Receive {
               payload: "no"
             }
           ]
-        )
+        ), { complaintType: "complaints_1" }
       ];
     } else if (payload.includes("complaints_2")) {
       response = [
@@ -417,7 +431,7 @@ module.exports = class Receive {
               payload: "no"
             }
           ]
-        )
+        ), { complaintType: "complaints_2"}
       ];
     } else if (payload.includes("complaints_3")) {
       response = [
@@ -433,7 +447,7 @@ module.exports = class Receive {
               payload: "no"
             }
           ]
-        )
+        ), { complaintType: "complaints_3" }
       ];
     } else if (payload.includes("complaints_4")) {
       response = [
@@ -449,7 +463,7 @@ module.exports = class Receive {
               payload: "no"
             }
           ]
-        )
+        ), { complaintType: "complaints_4" }
       ];
     } else if (payload.includes("yes_1")) {
       let confirm = Response.genText(i18n.__("fallback.correct_option"));

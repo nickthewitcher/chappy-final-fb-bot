@@ -235,6 +235,8 @@ app.post("/webhook", (req, res) => {
           users[senderPsid].state === "select_input" &&
           varResponse != null
         ) {
+          console.log("complaintType a asignar: " + varResponse[1].payload);
+          users[senderPsid].complaintType = varResponse[1].complaintType;
           users[senderPsid].state = "confirm_input";
         } else if (
           users[senderPsid].state === "confirm_input" &&
