@@ -206,8 +206,8 @@ app.post("/webhook", (req, res) => {
         console.log("Estado a entrar");
         console.log(users[senderPsid].state);
         let varResponse = receiveMessage.handleMessage(users[senderPsid].state);
-        if (varResponse.payload) {
-          if (varResponse.payload === "mygreetings") {
+        if (varResponse.length === 4) {
+          if (varResponse[3].payload === "mygreetings") {
             console.log("My greetings");
             users[senderPsid].state = "getstarted";
             users[senderPsid].typeOfReport = "";
