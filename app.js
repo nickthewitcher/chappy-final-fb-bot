@@ -105,7 +105,7 @@ app.post("/webhook", (req, res) => {
         }
       }
 
-      // Gets the body of the webhook event
+      // Gets the body final of the webhook event
       let webhook_event = entry.messaging[0];
       //console.log("Gets the body of the webhook event ");
       //console.log(webhook_event);
