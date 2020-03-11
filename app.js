@@ -206,23 +206,25 @@ app.post("/webhook", (req, res) => {
         console.log("Estado a entrar");
         console.log(users[senderPsid].state);
         let varResponse = receiveMessage.handleMessage(users[senderPsid].state);
-        if (varResponse.length === 4) {
-          if (varResponse[3].payload === "mygreetings") {
-            console.log("My greetings");
-            users[senderPsid].state = "getstarted";
-            users[senderPsid].typeOfReport = "";
-            users[senderPsid].legalName = "";
-            users[senderPsid].legalDni = "";
-            users[senderPsid].legalBirthday = "";
-            users[senderPsid].cellphone = "";
-            users[senderPsid].legalEmail = "";
-            users[senderPsid].legaladdress = "";
-            users[senderPsid].photoUrl = "";
-            users[senderPsid].dateOfFact = "";
-            users[senderPsid].addressFact = "";
-            users[senderPsid].howFact = "";
-            users[senderPsid].detailFact = "";
-            users[senderPsid].evidenceUrl = "";
+        if (varResponse != null) {
+          if (varResponse.length === 4) {
+            if (varResponse[3].payload === "mygreetings") {
+              console.log("My greetings");
+              users[senderPsid].state = "getstarted";
+              users[senderPsid].typeOfReport = "";
+              users[senderPsid].legalName = "";
+              users[senderPsid].legalDni = "";
+              users[senderPsid].legalBirthday = "";
+              users[senderPsid].cellphone = "";
+              users[senderPsid].legalEmail = "";
+              users[senderPsid].legaladdress = "";
+              users[senderPsid].photoUrl = "";
+              users[senderPsid].dateOfFact = "";
+              users[senderPsid].addressFact = "";
+              users[senderPsid].howFact = "";
+              users[senderPsid].detailFact = "";
+              users[senderPsid].evidenceUrl = "";
+            }
           }
         }
         console.log("El response a retornar:");
