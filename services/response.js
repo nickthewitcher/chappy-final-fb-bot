@@ -153,6 +153,10 @@ module.exports = class Response {
       }
     ]);
 
-    return [welcome, guide, inputname];
+    let mypayload = {
+      payload: "mygreetings"
+    }
+
+    return [welcome, guide, inputname, mypayload];
   }
 };
