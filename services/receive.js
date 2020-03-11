@@ -116,18 +116,37 @@ module.exports = class Receive {
     } else {
       if (lastevent === "getstarted") {
         response = [Response.genText(i18n.__("fallback.wrong"))];
+      } else if (lastevent === "select_input") {
+        response = [
+          Response.genQuickReply(i18n.__("fallback.wrong"), [
+            {
+              title: i18n.__("menu.complaints_1"),
+              payload: "complaints_1"
+            },
+            {
+              title: i18n.__("menu.complaints_2"),
+              payload: "complaints_2"
+            },
+            {
+              title: i18n.__("menu.complaints_3"),
+              payload: "complaints_3"
+            },
+            {
+              title: i18n.__("menu.complaints_4"),
+              payload: "complaints_4"
+            }
+          ])
+        ];
       } else if (lastevent === "nombre") {
         let responseData = Response.genText(
           i18n.__("fallback.dni", {
             message: this.webhookEvent.message.text
           })
         );
-
         let payloadData = {
           payload: this.webhookEvent.message.text,
           user: this.user.psid
         };
-
         response = [responseData, payloadData];
       } else if (lastevent === "dni") {
         response = [Response.genText(i18n.__("fallback.birthday"))];
