@@ -68,7 +68,7 @@ module.exports = class Receive {
           console.log("Asignando nulo");
           responses = null;
         }
-        if (response.payload === "no") {
+        if (response.payload === "no" || response.payload === "incorrect") {
           console.log("Asignando nulo en No");
           responses = null;
         }
@@ -248,13 +248,17 @@ module.exports = class Receive {
         ]);
         response = [first, second];
       } else {
-        response = [
-          Response.genText(
-            i18n.__("fallback.any", {
-              message: this.webhookEvent.message.text
-            })
-          )
-        ];
+        let first = Response.genText(
+          i18n.__("fallback.any", {
+            message: this.webhookEvent.message.text
+          })
+        );
+        let second = {
+          payload: "incorrect",
+          user: this.user.psid
+        };
+
+        response = [first, second];
       }
       console.log("Receive 114.js help");
     }
