@@ -130,5 +130,24 @@
 
     "finish1": "Listo, no te preocupes, tu denuncia ha sido registrada  con el código xxx y será derivada a las entidades pertinentes. ",
     "finish2": "Te atendió Chappy Police Man, espero haberte ayudado. Que tengas un buen día."
+  },
+  "titles": {
+    "title_en": "FORMULARIO DE RECEPCIÓN DE DENUNCIAS POLICIALES",
+    "titl_per_en": "DATOS GENERALES DEL DENUNCIANTE",
+    "title_com_en": "DATOS DE LA DENUNCIA"
+  },
+  "report": {
+    "fullname_en": "Nombres y Apellidos: ",
+    "iddoc_en": "Documento de identidad o pasaporte: ",
+    "birthday_en": "Fecha de nacimiento: ",
+    "telephone_en": "Nro. de celular: ",
+    "email_en": "Correo electrónico: ",
+    "address_en": "Dirección: ",
+    "type_en": "Tipo de denuncia: ",
+    "datetime_en": "Fecha y hora: ",
+    "place_en": "Lugar: ",
+    "details_en": "Detalle de los hechos: ",
+    "evidence_en": "Evidencia: ",
+    "idreport_en": "ID de denuncia: "
   }
 }
