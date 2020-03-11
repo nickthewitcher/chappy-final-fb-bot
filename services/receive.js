@@ -235,6 +235,21 @@ module.exports = class Receive {
         }
       } else if (lastevent === "address") {
         response = [Response.genText(i18n.__("fallback.photoquestion"))];
+      } else if (lastevent === "photoquestion") {
+        response = Response.genQuickReply(i18n.__("fallback.wrong"), [
+          {
+            title: i18n.__("menu.yes"),
+            payload: "yes_confirmation"
+          },
+          {
+            title: i18n.__("menu.no"),
+            payload: "deny_confirmation"
+          }
+        ]);
+        console.log("Receive.js 135 help");
+        console.log("---------Llamando a handleAttachmentMessage----------");
+        console.log("Payload handleAttachmentMessage");
+        console.log(response);
       } else if (lastevent === "when") {
         response = [Response.genText(i18n.__("fallback.scenefact"))];
       } else if (lastevent === "where") {
